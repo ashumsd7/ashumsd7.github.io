@@ -1,0 +1,17 @@
+.poem-list
+{
+    font-weight: bolder;
+    transition: ease-in .5s;
+}
+
+span{
+    color:red;
+    font-weight: bolder;
+}
+
+.poem-list:hover{
+    background-color: rgb(19, 224, 156);
+    
+    font-weight: bolder;
+    border-radius: 10px;
+}
