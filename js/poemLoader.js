@@ -1,7 +1,7 @@
 var backBtn= document.getElementById("back");
 var one = document.getElementById("one");
 var two = document.getElementById("two");
-
+var three= document.getElementById("three");
 
 
 
@@ -24,6 +24,12 @@ two.innerText = " हम न बदले तो क्या हुआ..";
 two.addEventListener("click", function () {
     two2();
 })
+
+three.innerText= "मै था ?"
+three.addEventListener("click",function() {
+    three3();
+})
+
 
 
 
@@ -48,6 +54,8 @@ function two2() {
 
 
 function three3() {
+
+    mainTha();
 
 }
 
@@ -444,4 +452,160 @@ function humNaBadle() {
     
     `;
 
+}
+
+function mainTha() {
+
+    let html = document.getElementById("poemContent");
+    html.innerHTML =`  <center>
+     <h2>मै था ?</h2>
+     <hr>
+     </center>
+    
+     <center>
+     <table >
+     <tr>
+         <td>
+         एक कमरे में बैठा, कोई मुझे निहारता था
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         जब भी मैं उसके सामने से जाता था
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         मालूम नहीं था, ये मुझे निहारता क्यों है
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         मैं जब भी घर आऊं ,तभी ये आता क्यों हैं
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         जब जब मेरे अंदर आहट होती, उसकी मुझे और निहारने की चाहत होती
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         अब तक कभी ऐसा न हुआ ,जो अब हो रहा था
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         हर दिन मैं अपने अंदर हज़ारों सवाल लिए सो रहा था
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         मैंने सोचा पूछ लूँ, की तुम कौन हो
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         मेरे अंदर इतने सवाल ,और तुम मौन हो
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         क्यों लगता है मुझे की, तुम मुझे पहचानते हो
+         </td>
+     </tr>
+ 
+ 
+     <tr>
+         <td>
+         मुझसे ज्यादा तुम मुझको जानते हो
+         </td>
+     </tr>
+ 
+ 
+     <tr>
+         <td>
+         इतना सोच के मैं चल पड़ा बस थोड़ी दूर मेरा घर पड़ा
+         </td>
+     </tr>
+ 
+ 
+     <tr>
+         <td>
+         आशा ये थी की मुझे फिर वो देखेगा 
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         मेरे बारे में वो शंका से सोचेगा
+         </td>
+     </tr>
+ 
+ 
+     <tr>
+         <td>
+         आज वो पता नहीं किधर था
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         कैसे ढूढूं उसे ,न पता उसका घर था
+         </td>
+     </tr>
+
+     
+     <tr>
+         <td>
+         अब पता नहीं ,मैं  जाऊं कहाँ
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         अपने आप को ,उससे मिलाऊ कहाँ
+         </td>
+     </tr>
+ 
+ 
+     <tr>
+         <td>
+         किसी को न देखा परेशां ,जितना मैं आज था
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         आज कुछ ज्यादा ही बदला, मेरा अंदाज़ था
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         मेरे अंदर उससे ,न मिल पाने का भय था
+         </td>
+     </tr>
+ 
+     <tr>
+         <td>
+         आखिर क्यों मुझे लगता है ,शायद वो मै था 
+         </td>
+     </tr>
+ 
+ 
+ 
+ 
+ </table>
+     </center>`
+    
 }
