@@ -95,8 +95,8 @@ margin-bottom: 200px;
         display: block;
         color: white;
     font-size: 50px;
-    font-weight: 700;
-    text-shadow: 1px 5px rgba(168, 162, 162, 0.5);
+    font-weight: 400;
+    text-shadow: 1px 5px rgba(168, 162, 162, 0.2);
     margin-left: 5px;
 }
 @media only screen and (max-width: 400px) {
