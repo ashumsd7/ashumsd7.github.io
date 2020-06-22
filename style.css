@@ -33,6 +33,12 @@ main{
     cursor: pointer;
 }
 
+main .signature{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
 main .name{
     font-family: 'montserrat', sans-serif;
     display: block;
