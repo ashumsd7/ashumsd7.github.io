@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
   
 }
 body{
@@ -50,6 +51,15 @@ main .name{
     font-family: 'montserrat', sans-serif;
     display: block;
     color: white;
+font-size: 102px;
+font-weight: 900;
+text-shadow: 2px 10px rgba(168, 162, 162, 0.9);
+}
+main .name:hover{
+    transition: 1s ease-out;
+    font-family: 'montserrat', sans-serif;
+    display: block;
+    color: rgb(180, 175, 175);
 font-size: 102px;
 font-weight: 900;
 text-shadow: 2px 10px rgba(168, 162, 162, 0.9);
