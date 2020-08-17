@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    background: rgba(143, 228, 243, 0.6);
+    
+}
+
+.main-content{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.main-content__image{
+  
+}
+.main-image{
+    margin-top: 3rem;
+   height: 250px;
+   width: 250px;
+   border-top: 1px solid red;
+   border-bottom: 1px solid rgb(3, 3, 3);
+   border-radius: 50%;
+}
+.main-content__info{
+    margin-top: 20px;
+}
+.main-content__info strong{
+    color: blue;  
+}
+.main-content__info .skills{
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    color: rgb(3, 3, 3);
+    
+}
+.main-content__info-btn{
+    font-size: 1.5rem;
+    padding: 5px;
+    display: inline;
+    cursor: pointer;
+}
