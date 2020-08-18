@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Mate</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body i>
+    <div id="app">
     <div class="header">
-
+        {{ name }}
     </div>
     <div class="main-content">
- 
+        <marquee behavior="" direction="">I am working on it. Thanks for visiting.....</marquee>
         <div class="main-content__image">
           <img class="main-image" src="images/ashu.jpg" alt="" srcset="">
+        </div>
+        <div class="main-content__title">
+            <p>Ashutosh Anand Tiwari...</p>
         </div>
         <div class="main-content__info">
             <div class="main-content__info-text">
@@ -23,13 +29,27 @@
                 <Strong class="skills">HTML | CSS | Javascript | VueJS</Strong>
             </div>
             <br>
-           <p class="main-content__info-btn" > <i class="fa fa-github" aria-hidden="true"></i> </button>
-           <p class="main-content__info-btn" > <i class="fa fa-linkedin" aria-hidden="true"></i> </button>
-           <p class="main-content__info-btn" > <i class="fa fa-medium" aria-hidden="true"></i> </button>
-           <p class="main-content__info-btn" > <i class="fa fa-quora" aria-hidden="true"></i> </button>
-           <p class="main-content__info-btn" > <i class="fa fa-twitter" aria-hidden="true"></i> </button>
+           <p class="main-content__info-btn" @click='githubClicked()' > <i class="fa fa-github" aria-hidden="true"></i> </button>
+           <!-- <p class="main-content__info-btn"  @click='linkdinClicked()'> <i class="fa fa-linkedin" aria-hidden="true"></i> </button> -->
+           <p class="main-content__info-btn"  @click='mediumClicked()'> <i class="fa fa-medium" aria-hidden="true"></i> </button>
+           <p class="main-content__info-btn"  @click='quoraClicked()'> <i class="fa fa-quora" aria-hidden="true"></i> </button>
+           <p class="main-content__info-btn"  @click='twitterClicked()'> <i class="fa fa-twitter" aria-hidden="true"></i> </button>
+        </div>
+        <div class="main-content__others">
+            <div class="main-content__others-links">
+                <p> <i class="fa fa-user" aria-hidden="true"></i>ABOUT ME</p>
+                <p><i class="fa fa-book" aria-hidden="true"></i>EDUCATION</p>
+                <p><i class="fa fa-laptop" aria-hidden="true"></i>EXPERIENCE</p>
+                <p><i class="fa fa-building" aria-hidden="true"></i>PROJECTS</p>
+                <p><i class="fa fa-heart-o" aria-hidden="true"></i>SKILLS</p>
+                <p><i class="fa fa-futbol-o" aria-hidden="true"></i>HOBBIES</p>
+                
+                
+            </div>
         </div>
         
     </div>
+</div>
+    <script src="main.js"></script>
 </body>
 </html>
