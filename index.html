@@ -11,17 +11,34 @@
 </head>
 <body i>
     <div id="app">
+        <div id="backdrop-id" class="backdrop">
+
+        </div>
     <div class="header">
-        {{ name }}
+ 
     </div>
     <div class="main-content">
         <marquee behavior="" direction="">I am working on it. Thanks for visiting.....</marquee>
         <div class="main-content__image">
           <img class="main-image" src="images/ashu.jpg" alt="" srcset="">
         </div>
+
         <div class="main-content__title">
             <p>Ashutosh Anand Tiwari...</p>
         </div>
+
+        <!-- This pop up window start-->
+        <div id="popup-window-id" class="popup-window">
+            <div class="popup-window__text">
+                <p>Ashu has 600+ commits this year.</p>
+            </div>
+            <div class="popup-window__btn">
+                <button @click="continueClicked" class="left-btn"><i class="fa fa-check" aria-hidden="true"></i>Go..</button> 
+                <button  @click="noClicked" class="right-btn"><i class="fa fa-times" aria-hidden="true"></i>NO..</button> 
+            </div>
+        </div>
+<!-- This pop up window end-->
+
         <div class="main-content__info">
             <div class="main-content__info-text">
                 <Strong>23 | On a Road to be a Web Developer</Strong>
@@ -35,6 +52,9 @@
            <p class="main-content__info-btn"  @click='quoraClicked()'> <i class="fa fa-quora" aria-hidden="true"></i> </button>
            <p class="main-content__info-btn"  @click='twitterClicked()'> <i class="fa fa-twitter" aria-hidden="true"></i> </button>
         </div>
+
+       
+
         <div class="main-content__others">
             <div class="main-content__others-links">
                 <p> <i class="fa fa-user" aria-hidden="true"></i>ABOUT ME</p>
