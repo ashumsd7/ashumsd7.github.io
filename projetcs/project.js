@@ -13,6 +13,9 @@ new Vue({
      covidLiveLinkClicked(){
        window.location.href="https://github.com/ashumsd7/covid"
     
+     },
+     covidActiveLinkClicked(){
+      window.location.href="https://nocovid.netlify.app"  
      }
      
     },

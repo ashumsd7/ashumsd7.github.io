@@ -44,7 +44,7 @@
 .project-about {
   /* display: inline-block; */
   /* width: 40%; */
-  font-size: .8rem;
+  font-size: 1rem;
 
 }
 .project-about__text{
@@ -56,10 +56,8 @@
   color: blue;
 }
 .project-about__text-links-main h5{
-  
   color: rgb(238, 9, 9);
   cursor: pointer;
-
 }
 .project-about__text-links-main h5:hover{
   color: rgb(13, 28, 165);
