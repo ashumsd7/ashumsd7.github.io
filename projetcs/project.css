@@ -1,16 +1,104 @@
-.project-demo{
-    /* width: 60%; */
-    display: inline-block;
-    width: 45%;
+* {
+  margin: 0;
+  padding: 0;
+  /* background: rgba(4, 178, 231, 0.6); */
+  box-sizing: border-box;
+}
+.project-demo {
+  /* display: inline-block; */
+  /* width: 55%; */
 }
 
-.project-demo .project-demo__image{
-  max-width: 350px;
+.project-demo .project-demo__image {
+  width: 99%;
+  /* padding: 10px; */
+ border-left:8px solid rgb(0, 0, 0);
+ border-right: 8px solid rgb(0, 0, 0);
+ border-top: 3px solid rgb(0, 0, 0);
+ border-bottom: 16px solid rgb(0, 0, 0);
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ margin-left: .3rem;
+ margin-top: .5rem;
+ box-shadow: 4px 4px 8px gray .5;
 }
-.project-about{
-    display: inline-block;
-    /* width: 35%; */
-    /* padding: 20px; */
-    width: 50%;
+.video-small-stand{
+  box-sizing: border-box;
+  border-bottom: 20px solid rgb(3, 3, 3);
+  width: 18%;
+  margin:auto;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.video-stand{
+  border-bottom: 40px solid rgb(1, 1, 2);
+  width: 50%;
+  margin:auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.project-demo .project-demo__image:focus{
+  outline: none;
+}
+.project-about {
+  /* display: inline-block; */
+  /* width: 40%; */
+  font-size: 1.5rem;
 
+}
+.project-about__text{
+  padding: 10px;
+}
+
+.project-about__text-heading h2{
+  font-family: 'Russo One', sans-serif;
+  color: blue;
+}
+.project-about__text-links-main h5{
+  
+  color: rgb(238, 9, 9);
+  cursor: pointer;
+
+}
+.project-about__text-links-main h5:hover{
+  color: rgb(13, 28, 165);
+  transition: .5s;
+
+
+}
+.project-about__text-links-other strong{
+  /* font-size: 1.3rem;
+  margin: .2rem;
+  background: green;
+  color: rgb(255, 255, 255); */
+  font-size: 20px;
+  cursor: pointer;
+  margin:.5rem;
+  
+}
+.project-about__text-description{
+  /* font-family: 'Caveat', cursive; */
+  margin-left: 1rem;
+ 
+}
+.project-about__text-description ul li span{
+  font-weight: bold;
+  color: rgb(226, 14, 120);
+ 
+ 
+}
+
+
+@media (min-width: 40rem) {
+  .project-demo {
+    display: inline-block;
+    width: 55%;
+  }
+  .project-about {
+    font-size: 1.5rem;
+    /* color: red; */
+    display: inline-block;
+    width: 40%;
+ 
+  }
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../shared.css" />
+    <!-- <link rel="stylesheet" href="../shared.css" /> -->
     <link rel="stylesheet" href="project.css" />
   </head>
   <body>
@@ -16,12 +16,41 @@
       <section class="project-main-section">
         <div class="project-container">
             <div class="project-demo">
-                <img class="project-demo__image" src="../images/project.JPG" alt="" srcset="">
+                <!-- <img  class="project-demo__image"  src="../images/project.JPG" alt="" srcset=""> -->
+               <video class="project-demo__image"   autoplay controls muted src="../images/COVID.mp4"></video>
+               <div class="video-small-stand"></div>
+               <div class="video-stand"></div>
             </div>
+            
             <div class="project-about">
-                <p class="project-about__text">
-                    Erat aliquyam gubergren invidunt accusam sadipscing et ipsum at, magna sit est lorem ea est amet lorem et dolore, vero magna vero justo eos justo. Ipsum amet no gubergren erat gubergren ipsum labore. Dolor et diam et invidunt et labore. Eirmod sea magna sadipscing dolore aliquyam ipsum ea ut vero, sadipscing no tempor dolores sea. Sit diam ea dolor aliquyam est sadipscing eos kasd diam. Sit kasd nonumy sed ut rebum aliquyam tempor et, sed rebum dolor elitr amet aliquyam. Consetetur lorem invidunt labore diam sed lorem sed elitr, consetetur invidunt clita sanctus stet. Aliquyam vero amet et takimata elitr.
-                </p>
+                <div class="project-about__text">
+                  <div class="project-about__text-heading">
+                    <h2 > {{first_project_title}}</h2>
+                  </div>
+                  <div class="project-about__text-links-main">
+                    <h5> <i class="fa fa-link" aria-hidden="true"></i> {{first_project_live_link }}</h5>
+                   </div>
+                  <div class="project-about__text-links-other">
+                   <strong @click="covidLiveLinkClicked"> <i class="fa fa-github" aria-hidden="true"></i>Github</strong> 
+                  </div>
+                  <div class="project-about__text-description">
+                    <p>
+                    <strong>
+                      This is a covid 19 dasboard of Inida.
+                    </strong>
+                    <br>
+                    <ul>
+                      <li>Live Updated Cases | in Hindi | हिन्दी </li>
+                      <li>Created and launched in <span>April 2020</span> </li>
+                      <li>Page Visites: <span> 8000+</span> </li>
+                      <li>Technologies Used:  <span> HTML, CSS, JS , Vue, Google fonts and fa-fa icons</span> </li>
+                      <li>Editor: <span>VS Code</span> </li>
+                    </ul>
+                    </p>
+                  </div>
+                   
+                    
+                </div>
             </div>
 
         </div>
