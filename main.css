@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  background: rgba(143, 228, 243, 0.6);
-  box-sizing: border-box;
-}
+
 .backdrop {
   position: fixed;
   display: none;

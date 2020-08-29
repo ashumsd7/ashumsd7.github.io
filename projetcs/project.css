@@ -1,0 +1,16 @@
+.project-demo{
+    /* width: 60%; */
+    display: inline-block;
+    width: 45%;
+}
+
+.project-demo .project-demo__image{
+  max-width: 350px;
+}
+.project-about{
+    display: inline-block;
+    /* width: 35%; */
+    /* padding: 20px; */
+    width: 50%;
+
+}
