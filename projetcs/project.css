@@ -8,6 +8,22 @@
   /* display: inline-block; */
   /* width: 55%; */
 }
+.project-demo-float{
+  font-size: 48px;
+  font-weight: bolder;
+  position: absolute;
+  z-index: 1;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  width: 2.5rem;
+  height: auto;
+  border-radius: 50%;
+  background: rgb(15, 250, 7);
+}
+.project-demo-float p{
+  color: rgb(0, 0, 0);
+  margin-left: .3rem;
+}
 
 .project-demo .project-demo__image {
   width: 99%;
