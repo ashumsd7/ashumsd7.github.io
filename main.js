@@ -7,8 +7,9 @@ new Vue({
   },
   methods: {
     githubClicked() {
-      document.getElementById("backdrop-id").style.display = "block";
-      document.getElementById("popup-window-id").style.display = "block";
+      // document.getElementById("backdrop-id").style.display = "block";
+      // document.getElementById("popup-window-id").style.display = "block";
+      window.location.href = "https://github.com/ashumsd7";
     },
     linkdinClicked() {
       window.location.href = "";
