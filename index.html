@@ -2,75 +2,370 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
+   
+ 
     <title>Welcome Mate</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="shared.css">
+  
 </head>
 <body >
-    <div id="app">
-        <div id="backdrop-id" class="backdrop">
+<!---Header-->
 
-        </div>
     <div class="header">
- 
-    </div>
-    <div class="main-content">
-        <marquee behavior="" direction="">Updated : <a href="https://aat.netlify.app/" > Look at new one </a></marquee>
-        <div class="main-content__image">
-          <img class="main-image" src="images/ashu.jpg" alt="" srcset="">
-        </div>
-
-        <div class="main-content__title">
-            <p>Ashutosh Anand Tiwari...</p>
-        </div>
-
-        <!-- This pop up window start-->
-        <div id="popup-window-id" class="popup-window">
-            <div class="popup-window__text">
-                <p><i class="fa fa-smile-o" aria-hidden="true"></i>Ashu has no follower on Github.<i class="fa fa-smile-o" aria-hidden="true"></i> </p>
-            </div>
-            <div class="popup-window__btn">
-                <button @click="continueClicked" class="left-btn"><i class="fa fa-check" aria-hidden="true"></i>Go There</button> 
-                <button  @click="noClicked" class="right-btn"><i class="fa fa-times" aria-hidden="true"></i>Stay Here</button> 
-            </div>
-        </div>
-<!-- This pop up window end-->
-
-        <div class="main-content__info">
-            <div class="main-content__info-text">
-                <Strong>23 | On a Road to be a Web Developer</Strong>
-                <br>
-                <Strong class="skills">HTML | CSS | Javascript | VueJS</Strong>
-            </div>
-            <br>
-           <p class="main-content__info-btn" @click='githubClicked()' > <i class="fa fa-github" aria-hidden="true"></i> </button>
-           <!-- <p class="main-content__info-btn"  @click='linkdinClicked()'> <i class="fa fa-linkedin" aria-hidden="true"></i> </button> -->
-           <!-- <p class="main-content__info-btn"  @click='mediumClicked()'> <i class="fa fa-medium" aria-hidden="true"></i> </button> -->
-           <p class="main-content__info-btn"  @click='quoraClicked()'> <i class="fa fa-quora" aria-hidden="true"></i> </button>
-           <p class="main-content__info-btn"  @click='twitterClicked()'> <i class="fa fa-twitter" aria-hidden="true"></i> </button>
-        </div>
-
-       
-
-        <div class="main-content__others">
-            <div class="main-content__others-links">
-                <!-- <p> <i class="fa fa-user" aria-hidden="true"></i>ABOUT ME</p>
-                <p><i class="fa fa-book" aria-hidden="true"></i>EDUCATION</p> -->
-                <p><i class="fa fa-laptop" aria-hidden="true"></i><a href="https://drive.google.com/file/d/13f4ynjalPP8e8ho4SRrRniBuqm63e1fd/view?usp=drivesdk">RESUME</a> </p>
-                <p><i class="fa fa-building" aria-hidden="true" ></i> <a href="projetcs/index.html">PROJECTS</a> </p>
-                <!-- <p><i class="fa fa-heart-o" aria-hidden="true"></i>SKILLS</p>
-                <p><i class="fa fa-futbol-o" aria-hidden="true"></i>HOBBIES</p> -->
-                
-                
-            </div>
-        </div>
-        
-    </div>
+        <div class="menu-bar">
+        <nav class="navbar  navbar-expand-lg " id="navbar_top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">ASH<span class="nav-span">U</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span></span>
+                <span></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#intro">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="intro">Contact me</a>
+                  </li>
 </div>
+                 </div>
+                 </div>
+                </nav></div>
+
+                <!--Intro-->
+         <section id="intro" class="section">
+         <div class="intro">
+                    <div class="container intro-cont ">
+                      
+                  <div class="row justify-content-center ">  
+
+ 
+
+
+                   <div class="col-lg-6 col-md-6 col-12 col-xxl-6 mt-0 ms-auto info-cont"  >
+                  <div>
+                    <h1 class=" intro-heading2">ASHU<span>T</span>OSH TIWARI</h1>
+                    <p class="intro-para">A Developing <span>Web </span>Developer  </p>
+                <div class="buttons">
+                       
+
+
+                  <a class="btn btn-Bg" href="https://drive.google.com/file/d/13f4ynjalPP8e8ho4SRrRniBuqm63e1fd/view?usp=drivesdk">Resume</a>
+                                                <a class="btn btn-Bg" href="mailto: aat8001@gmail.com" >Send Email</a>
+</div>
+                        
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+
+</section>
+
+
+<!--Skills-section-->
+
+<section id="skills" class="section" >
+<h2 class="skills">Skills</h2>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md-6 col-12 ml-8 mt-5 web-cont" >
+      <div>
+
+<img class="web img-fluid" src="images/web3.png" alt="">
+       </div>
+    </div>
+  
+
+
+  <div class="col-lg-6 col-md-6 col-12 ml-8 mt-5 skil-cont">
+    <div>
+      <div class="each-skills">
+        <span>HTML</span>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="each-skills">
+        <span>CSS</span>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="each-skills">
+        <span>JAVASCRIPT</span>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="each-skills">
+        <span>VUE</span>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="each-skills">
+        <span>FIREBASE</span>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  
+</div>
+</div>
+</section>
+
+<!--Projects section-->
+
+<section class="port" id="projects">
+   <div class="container py-5 ">
+    <div class="row justify-content-center gy-5">
+   <div class="col-lg-8">
+     <div class="section-title text-center">
+   <h2 class="text-center port-h1 " id="projects"  
+   >PRO<span class="portspan">J</span>ECTS!</h1>
+   </div>       
+  </div>
+ </div>
+
+
+  
+    <div class="row gy-5">
+      <div class="col-md-6 col-lg-4 ">
+        <div class="card">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWfXj6zgf7mCa8ahEx1Vwa4nAkE-4ICGL9g&usqp=CAU" alt=" ">
+          <div class="card-body">
+            <h5 class="card-title"> COVID19 DASHBOARD</h5>
+              <p class="card-text">
+                This is a covid 19 tracker. More than 9000 visits.
+              </p>
+              <p class="text-light">Made with HTML, CSS, JS, VUE</p>
+            
+              <a href="https://nocovid.netlify.app/" class="btn myBtn">View Live</a>
+              <a href="#" class="btn myBtn ">Source Code</a>
+       
+          </div>
+        </div>
+</div>
+ <div class="col-md-6 col-lg-4 ">
+  <div class="card">
+    <img class="img-fluid" src="https://image.freepik.com/free-vector/messenger-concept-illustration_114360-6564.jpg" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title">POST OFFICE FINDER</h5>
+        <p class="card-text">
+          Enter your area picode and get list of post offices under entered pincode.  </p>
+         <p class="text-light">  Made with HTML, CSS AND JAVASCRIPT</p>
+      
+        <a href="#" class="btn myBtn">View Live</a>
+        <a href="#" class="btn myBtn ">Source Code</a>
+    </div>
+    
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+  <div class="card">
+    <img class="img-fluid" src="images/projectA1.png" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title"> ASHI SHOP</h5>
+        <p class="card-text">
+     
+          A simple resposive UI made bootstrap for beauty products. </p>
+          
+          <p class="text-light">Made with HTML CSS Bootstrap</p>
+          
+        <a href="https://ashumsd7.github.io/Ashi-Shop-Bootstrap-Website/" class="btn myBtn">View Live</a>
+        <a href="https://github.com/ashumsd7/Ashi-Shop-Bootstrap-Website" class="btn myBtn ">Source Code</a>
+    
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+  <div class="card">
+    <img class="img-fluid" src="images/projecta3.png" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title"> TODO APP IN QUASAR</h5>
+        <p class="card-text">A beautiful landing page in css resposnsive!
+        </p>
+ <p class="text-light">Made with Quasar</p>
+ <br>
+ <br><br>
+ 
+    <a href="https://quasar-todo-app-aat.netlify.app/#/" class="btn myBtn">View Live</a>
+    <a href="https://github.com/ashumsd7/ToDo-App-Quasar" class="btn myBtn ">source code</a>
+    </div>
+    
+  </div>
+</div>
+<div class="col-md-6 col-lg-4">
+  <div class="card">
+    <img class="img-fluid" src="https://image.freepik.com/free-vector/gamers-using-different-devices-playing-mobile-phone-tablet-laptop-console-cartoon-illustration_74855-14380.jpg" alt=" "  >
+    <div class="card-body">
+      <h5 class="card-title"> GAME -VOICE OPERATED</h5>
+        <p class="card-text">
+          A Game, Best faeture of this game is you can operate it by your voice. Just Say 'GOOD MORNING' and you are ready to play. </p>
+
+          <p class="text-light">HTML CSS JS VUE</p> 
+         <br>
+        <a href="https://ashumsd7.github.io/Attack-Attack/" class="btn myBtn">View Live</a>
+        <a href="https://github.com/ashumsd7/Attack-Attack" class="btn myBtn ">Source Code</a>
+    </div>
+  </div>
+ 
+</div>
+
+<div class="col-md-6 col-lg-4">
+  <div class="card">
+    <img class="img-fluid" src="images/projectA2.png" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title"> Tea Shop</h5>
+        <p class="card-text">
+          A tea shop made in bootstrap and vue js.</p>
+
+          <p class="text-light">Made with HTML, CSS ,Bootstrap and vue</p>
+         <br>
+         <br><br>
+        <a href="https://desiteashop.netlify.app/" class="btn myBtn">View Live</a>
+        <a href="https://github.com/ashumsd7/A-Tea-Shop" class="btn myBtn ">Source Code</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4">
+  <div class="card">
+    <img class="img-fluid" src="images/projectA4.png" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title"> GOOGLE EXTENDED IO WEBSITE 2021 EVENT</h5>
+        <p class="card-text">
+          Google Extended IO Event oraganized by Programming Universal Group on 31st July. I made website for this event.
+</p>
+         <p  class="text-light"> Made with vue</p>
+         
+        <a href="https://io-extended-universal.netlify.app/" class="btn myBtn">View Live</a>
+        <a href=" https://github.com/PUGroups/IO-Extended-Universal" class="btn myBtn ">Source Code</a>
+    </div>
+    </div>
+  </div>
+
+<div class="col-md-6 col-lg-4">
+  <div class="card">
+    <img class="img-fluid" src="images/projectA5.png" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title">NEW YEAR COUNTDOWN </h5>
+        <p class="card-text">
+        do you want to check ho many days are left for new year?
+        just visit here I made this new year countddown
+ </p>
+         <p class="text-light">Made with Html CSS and JS</p> 
+         <br>
+        <a href="https://hnycard.netlify.app/" class="btn myBtn">View Live</a>
+        <a href="https://github.com/ashumsd7/JS--NEW-YEAR-COUNTDOWN" class="btn myBtn ">Source Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+  <div class="card">
+    <img class="img-fluid" src="images/projectA6.png" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title">RESOURCE APP </h5>
+        <p class="card-text">
+          A resource app, like a CRUD app 
+           </p>
+        <p class="text-light"> made with Vue JS.</p> 
+      <br>
+      <br>
+      <br>
+        <a href="https://theresource-app.netlify.app/" class="btn myBtn">View Live</a>
+        <a href="https://github.com/ashumsd7/VUE-THE-RESOURCE-PROJECT" class="btn myBtn ">Source Code</a>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+                 
+            </section>
+
+
+            <!--About meee-->
+            <section id="about"   >
+               
+                <div class="container-lg py-4"> 
+                  <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="section-title my-4 py-5 text-center">
+                 
+              <h2 class="fw-bold my-9 text-center about-title " 
+              >AB<span class="about-span">O</span>UT <span className="mespan">M</span>E!</h2>
+                </div></div></div>
+           
+              
+                <div class="row pl-3">
+                     <div class="col-md-6">
+                       <div class="about-img">
+                       <img src= "images/profile2.jpg" class="img-fluid profile" alt="Responsive" />
+                           </div></div>
+                  <div class="col-md-6 img-div">
+                    <div class="about-text">
+                      <p>
+                        Ashutosh Anand Tiwari
+                        24 years old, a life long learner working consistently in software development world for years. I beleive in hard work and I know after being a consistent any goal can be acheived. As we know consistency is key to success. I love to learn new things and meet new person, and always ready to contribute related to my tech stack.
+                      </p> 
+                      
+                      <p>
+                   <a class="social-link" href="https://twitter.com/YourVueJS"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg></a> 
+                   <a class="social-link" href="https://github.com/ashumsd7"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg></a>
+                      </p>
+                       </div>
+                      </div>
+                  </div>
+              </div>
+                </div>
+              </section> 
+       <!--foooter-->
+
+       <footer class="footer border-top py-4">
+         <div class="container-lg">
+           <div class="row">
+             <div class="col-lg-12">
+               <p class="m-0 text-center text-muted">&copy;2021</p>
+               <p class="m-0 text-center text-success">This Website is build and managed by <a class="footer-link"href="https://twitter.com/Vdi1402">Vidhi</a></p>
+             </div>
+           </div>
+         </div>
+       </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
