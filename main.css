@@ -84,13 +84,15 @@ background: #000000;
   margin-left: 0px;
 }
 
+.nav-span{
+  font-size: 38px;
+
+  color: #198754;
+}
+
 .navbar-toggler span + span _+ span {
   width: 10px;
   margin-left: 10px;
-}
-.navbar .scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
 }
 
 
@@ -428,7 +430,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 .profile{
   width: 300px;
-}
+  border-radius: 50%;}
 
 .about-text{
   color: white;
@@ -473,3 +475,8 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
   }
 
+.footer-link{
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
